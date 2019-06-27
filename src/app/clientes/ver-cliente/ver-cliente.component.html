@@ -1,0 +1,32 @@
+<div class="container fade" appLoadFade>
+  <h1>Detalle de Cliente</h1>
+  <app-breadcrumb></app-breadcrumb>
+  <div class="card l">
+    <h1>Detalle de cliente</h1>
+    <table>
+      <tr>
+        <td>Nombre</td>
+        <td>{{cliente?.nombre}}</td>
+      </tr>
+      <tr>
+        <td>CIF</td>
+        <td>{{cliente?.cif}}</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+    </table>
+    <div class="buttons">
+      <button routerLink="/clientes">Volver al listado</button>
+    </div>
+  </div>
+</div>

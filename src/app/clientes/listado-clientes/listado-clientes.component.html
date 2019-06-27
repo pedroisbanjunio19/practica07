@@ -1,0 +1,19 @@
+<div class="container fade" appLoadFade>
+  <h1>{{titulo}}</h1>
+  <app-breadcrumb></app-breadcrumb>
+  <table>
+    <tr>
+      <th>Nombre</th>
+      <th>CIF</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let cliente of clientes">
+      <td>{{cliente.nombre}}</td>
+      <td>{{cliente.cif}}</td>
+      <td>
+        <button routerLink="/ventas/clientes/ver-cliente/{{cliente.id}}">Visualizar</button>
+      </td>
+      <!-- <td><a (click)="navTo(cliente.id)">Visualizar</a></td> -->
+    </tr>
+  </table>
+</div>
